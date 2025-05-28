@@ -32,23 +32,25 @@ LazyData: true
 Depends:
   R (>= 3.3.0)
 Imports:
-  curl,
-  glue (>= 1.2.0),
-  httr,
-  installr,
-  jsonlite,
-  magrittr,
-  methods,
-  pkgbuild,
-  remotes,
-  rmarkdown,
-  shiny,
-  stringr ,
-  utils
+    curl,
+    glue (>= 1.2.0),
+    httr,
+    installr,
+    jsonlite,
+    magrittr,
+    methods,
+    pkgbuild,
+    remotes,
+    rmarkdown,
+    rvest,
+    shiny,
+    stringr,
+    utils,
+    xml2
 Suggests:
   knitr,
   stringi,
   covr,
   testthat
 VignetteBuilder: knitr
-RoxygenNote: 6.1.1
+RoxygenNote: 7.3.2

@@ -4,8 +4,10 @@
 \alias{code_section}
 \title{Pascal script to check registry for R}
 \usage{
-code_section(iss, R_version = paste0(">=", R.version$major, ".",
-  R.version$minor))
+code_section(
+  iss,
+  R_version = paste0(">=", base::R.version$major, ".", base::R.version$minor)
+)
 }
 \arguments{
 \item{iss}{Character vector which cumulatively becomes an Inno Setup Script (ISS).}

@@ -4,8 +4,10 @@
 \alias{get_R}
 \title{Downloads R}
 \usage{
-get_R(app_dir = getwd(), R_version = paste0(">=", R.version$major, ".",
-  R.version$minor))
+get_R(
+  app_dir = getwd(),
+  R_version = paste0(">=", R.version$major, ".", R.version$minor)
+)
 }
 \arguments{
 \item{app_dir}{Development app's directory, defaults to \code{getwd()}.}

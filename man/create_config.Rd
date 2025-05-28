@@ -4,11 +4,20 @@
 \alias{create_config}
 \title{Creates an app config file, "utils/config.cfg"}
 \usage{
-create_config(app_name, app_dir = getwd(), pkgs = c("jsonlite",
-  "remotes", "magrittr"), pkgs_path = "library", remotes = "none",
-  repo = "https://cran.rstudio.com", error_log = "error.log",
-  app_repo_url = "none", auth_user = "none", auth_pw = "none",
-  auth_token = "none", user_browser = "electron")
+create_config(
+  app_name,
+  app_dir = getwd(),
+  pkgs = c("jsonlite", "remotes", "magrittr"),
+  pkgs_path = "library",
+  remotes = "none",
+  repo = "https://cran.rstudio.com",
+  error_log = "error.log",
+  app_repo_url = "none",
+  auth_user = "none",
+  auth_pw = "none",
+  auth_token = "none",
+  user_browser = "electron"
+)
 }
 \arguments{
 \item{app_name}{The name of the app. It will be displayed throughout the installer's window titles, wizard pages, and dialog boxes. See \href{http://www.jrsoftware.org/ishelp/topic_setup_appname.htm}{[Setup]:AppName} for details. For continuous installations, \code{app_name} is used to check for an R package of the same name, and update it. The Continuous Installation vignette has more details.}

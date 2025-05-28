@@ -4,8 +4,7 @@
 \alias{files_section}
 \title{Files Section of ISS}
 \usage{
-files_section(iss, app_name, app_dir, user_browser,
-  file_list = character())
+files_section(iss, app_name, app_dir, user_browser, file_list = character())
 }
 \arguments{
 \item{iss}{Character vector which cumulatively becomes an Inno Setup Script (ISS).}

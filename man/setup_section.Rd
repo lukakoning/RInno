@@ -4,13 +4,25 @@
 \alias{setup_section}
 \title{Setup Section of ISS}
 \usage{
-setup_section(iss, app_dir, dir_out, app_version = "{#MyAppVersion}",
-  name = "{#MyAppName}", publisher = "{#MyAppPublisher}",
-  default_dir = "userdocs", privilege = "lowest",
-  info_before = "infobefore.txt", info_after = "infoafter.txt",
-  license_file = "none", setup_icon = "setup.ico", inst_pw = "none",
-  pub_url = "{#MyAppURL}", sup_url = "{#MyAppURL}",
-  upd_url = "{#MyAppURL}", compression = "lzma2/ultra64")
+setup_section(
+  iss,
+  app_dir,
+  dir_out,
+  app_version = "{#MyAppVersion}",
+  name = "{#MyAppName}",
+  publisher = "{#MyAppPublisher}",
+  default_dir = "userdocs",
+  privilege = "lowest",
+  info_before = "infobefore.txt",
+  info_after = "infoafter.txt",
+  license_file = "none",
+  setup_icon = "setup.ico",
+  inst_pw = "none",
+  pub_url = "{#MyAppURL}",
+  sup_url = "{#MyAppURL}",
+  upd_url = "{#MyAppURL}",
+  compression = "lzma2/ultra64"
+)
 }
 \arguments{
 \item{iss}{Character vector which cumulatively becomes an Inno Setup Script (ISS).}

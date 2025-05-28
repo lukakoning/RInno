@@ -4,22 +4,40 @@
 \alias{create_app}
 \title{Creates installation files and Inno Setup Script (ISS), "app_name.iss"}
 \usage{
-create_app(app_name = "myapp", app_dir = getwd(),
-  dir_out = "RInno_installer", pkgs = c("jsonlite", "shiny",
-  "magrittr"), pkgs_path = "bin", repo = "https://cran.rstudio.com",
-  remotes = "none", locals = NULL, app_repo_url = "none",
-  auth_user = "none", auth_pw = "none", auth_token = github_pat(),
-  user_browser = "electron", include_R = FALSE,
-  include_Pandoc = FALSE, include_Chrome = FALSE,
-  include_Rtools = FALSE, R_version = paste0(">=", R.version$major,
-  ".", R.version$minor), Pandoc_version = rmarkdown::pandoc_version(),
-  Rtools_version = "3.5", overwrite = TRUE, force_nativefier = TRUE,
-  nativefier_opts = c(), ...)
+create_app(
+  app_name = "myapp",
+  app_dir = getwd(),
+  app_port = 1984,
+  dir_out = "RInno_installer",
+  pkgs = c("jsonlite", "shiny", "magrittr"),
+  pkgs_path = "bin",
+  repo = "https://cran.rstudio.com",
+  remotes = "none",
+  locals = NULL,
+  app_repo_url = "none",
+  auth_user = "none",
+  auth_pw = "none",
+  auth_token = github_pat(),
+  user_browser = "electron",
+  include_R = FALSE,
+  include_Pandoc = FALSE,
+  include_Chrome = FALSE,
+  include_Rtools = FALSE,
+  R_version = paste0(">=", R.version$major, ".", R.version$minor),
+  Pandoc_version = rmarkdown::pandoc_version(),
+  Rtools_version = "3.5",
+  overwrite = TRUE,
+  force_nativefier = TRUE,
+  nativefier_opts = c(),
+  ...
+)
 }
 \arguments{
 \item{app_name}{The name of the app. It will be displayed throughout the installer's window titles, wizard pages, and dialog boxes. See \href{http://www.jrsoftware.org/ishelp/topic_setup_appname.htm}{[Setup]:AppName} for details. For continuous installations, \code{app_name} is used to check for an R package of the same name, and update it. The Continuous Installation vignette has more details.}
 
 \item{app_dir}{Development app's directory, defaults to \code{getwd()}.}
+
+\item{app_port}{The port number on which the app is broadcasted, defaults to 1984.}
 
 \item{dir_out}{Installer's directory. A sub-directory of \code{app_dir}, which will be created if it does not exist. Defaults to 'RInno_installer'.}
 

@@ -4,8 +4,14 @@
 \alias{icons_section}
 \title{Icons Section of ISS}
 \usage{
-icons_section(iss, app_dir, app_desc = "", app_icon = "default.ico",
-  prog_menu_icon = TRUE, desktop_icon = TRUE)
+icons_section(
+  iss,
+  app_dir,
+  app_desc = "",
+  app_icon = "default.ico",
+  prog_menu_icon = TRUE,
+  desktop_icon = TRUE
+)
 }
 \arguments{
 \item{iss}{Character vector which cumulatively becomes an Inno Setup Script (ISS).}

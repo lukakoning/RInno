@@ -4,8 +4,15 @@
 \alias{download_packages}
 \title{Download packages}
 \usage{
-download_packages(app_dir, pkgs_path, pkgs, repo, remotes, auth_user,
-  auth_token)
+download_packages(
+  app_dir,
+  pkgs_path,
+  pkgs,
+  repo,
+  remotes,
+  auth_user,
+  auth_token
+)
 }
 \arguments{
 \item{app_dir}{Development app's directory, defaults to \code{getwd()}.}
